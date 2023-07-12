@@ -45,10 +45,11 @@ crossorigin="anonymous">
             <template id="template-card" v-for="producto in productos">
                 <div class="contenedor">
                   <div class="card">
-                    <img class='img' width="80" height="80" :src="producto.imagen" :alt="producto.nombre">
+                    <img class='immagen' :src="producto.imagen" :alt="producto.nombre">
+                    <!-- width="80" height="80" -->
                     <div class="card-body">
                       <h5>{{producto.nombre}}</h5>
-                      <p>Precio: ${{producto.precio}}</p>
+                      <p>Precio: $ {{producto.precio}}</p>
                       <p>En Stock: {{producto.stock}}</p>
                        <a class="btn btn-primary" :href="'./producto_update.html?id='+ producto.id" >Editar</a>
                       <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
