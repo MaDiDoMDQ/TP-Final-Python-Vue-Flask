@@ -45,7 +45,7 @@ crossorigin="anonymous">
             <template id="template-card" v-for="producto in productos">
                 <div class="contenedor">
                   <div class="card">
-                    <img class='img' width="80" height="80" :src="'../img/'+producto.imagen" :alt="producto.nombre">
+                    <img class='img' width="80" height="80" :src="producto.imagen" :alt="producto.nombre">
                     <div class="card-body">
                       <h5>{{producto.nombre}}</h5>
                       <p>Precio: ${{producto.precio}}</p>
