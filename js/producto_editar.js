@@ -10,7 +10,7 @@ nombre:"",
 imagen:"",
 stock:0,
 precio:0,
-url:'http://madidomdq.pythonanywhere.com/productos/'+id,
+url:'https://madidomdq.pythonanywhere.com/productos/'+id,
 }
 },
 methods: {
